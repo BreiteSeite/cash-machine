@@ -1,7 +1,7 @@
 {
     "name": "breiteseite/cash-machine-api-silex",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Michael Kühn",

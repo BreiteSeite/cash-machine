@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../../package/cash-machine",
-                "reference": "a2b7a9f1cb7c066c5a7277abc08eb8e6d6054463",
+                "reference": "d722497783964a8bdcd75b1ccd800da2bf3d603c",
                 "shasum": null
             },
             "require": {
@@ -33,7 +33,7 @@
                 }
             },
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {

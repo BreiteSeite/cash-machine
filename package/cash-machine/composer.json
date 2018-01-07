@@ -1,7 +1,7 @@
 {
   "name": "breiteseite/cash-machine",
   "description": "A simple implementation of a cash machine",
-  "license": "proprietary",
+  "license": "MIT",
   "authors": [
     {
       "name": "Michael Kühn",
