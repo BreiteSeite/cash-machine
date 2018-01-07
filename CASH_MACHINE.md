@@ -12,7 +12,11 @@ The basic requirements are the follow:
 * It's possible to get the amount requested with available notes;
 * The client balance is infinite;
 * Amount of notes is infinite; 
-* Available notes R$ 100,00; R$ 50,00; R$ 20,00 e R$ 10,00
+* Available notes:
+    * R$ 100,00
+    * R$ 50,00
+    * R$ 20,00
+    * R$ 10,00
 
 Example
 ---------
