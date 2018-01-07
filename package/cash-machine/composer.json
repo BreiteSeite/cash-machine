@@ -18,7 +18,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "BreiteSeiteTest\\CashMachine\\": "tests/src"
+      "BreiteSeite\\CashMachineTest\\": "tests/src"
     }
   },
   "require-dev": {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BreiteSeiteTest\CashMachine\Withdrawal\Strategy;
+namespace BreiteSeite\CashMachineTest\Withdrawal\Strategy;
 
 use BreiteSeite\CashMachine\Currency\BrazilianReal;
 use BreiteSeite\CashMachine\Exception\InvalidArgumentException;
@@ -47,7 +47,7 @@ class LeastAmountOfBanknotesTest extends TestCase
     {
         $this->expectException(InvalidArgumentException::class);
 
-        $this->leastAmountOfBanknotes->withdraw(-130.00);
+        $this->leastAmountOfBanknotes->withdraw((float) -130.00);
     }
 
     public function testWithdrawalWithNullAmountReturnsNull()

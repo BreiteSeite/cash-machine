@@ -3,37 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/package/cash-machine/src" isTestSource="false" packagePrefix="BreiteSeite\CashMachine" />
-      <sourceFolder url="file://$MODULE_DIR$/package/cash-machine/tests/src" isTestSource="true" packagePrefix="BreiteSeiteTest\CashMachine" />
+      <sourceFolder url="file://$MODULE_DIR$/package/cash-machine/tests/src" isTestSource="true" packagePrefix="BreiteSeite\CashMachineTest" />
       <excludeFolder url="file://$MODULE_DIR$/api/silex/vendor/breiteseite" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/composer" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/doctrine/instantiator" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/myclabs/deep-copy" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phar-io/manifest" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phar-io/version" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpdocumentor/reflection-common" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpdocumentor/reflection-docblock" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpdocumentor/type-resolver" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpspec/prophecy" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpunit/php-code-coverage" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpunit/php-file-iterator" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpunit/php-text-template" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpunit/php-timer" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpunit/php-token-stream" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpunit/phpunit" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/phpunit/phpunit-mock-objects" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/code-unit-reverse-lookup" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/comparator" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/diff" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/environment" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/exporter" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/global-state" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/object-enumerator" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/object-reflector" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/recursion-context" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/resource-operations" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/sebastian/version" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/theseer/tokenizer" />
-      <excludeFolder url="file://$MODULE_DIR$/package/cash-machine/vendor/webmozart/assert" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
