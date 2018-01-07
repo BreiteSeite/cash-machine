@@ -1,0 +1,27 @@
+{
+  "name": "breiteseite/cash-machine",
+  "description": "A simple implementation of a cash machine",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Michael Kühn",
+      "email": "kuehn91@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "BreiteSeite\\CashMachine\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BreiteSeiteTest\\CashMachine\\": "tests/src"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  }
+}

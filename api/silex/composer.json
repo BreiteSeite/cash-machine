@@ -1,0 +1,25 @@
+{
+    "name": "breiteseite/cash-machine-api-silex",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Michael Kühn",
+            "email": "kuehn91@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "silex/silex": "^2.2",
+        "breiteseite/cash-machine": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../package/cash-machine"
+        }
+    ],
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public/"
+    }
+}
