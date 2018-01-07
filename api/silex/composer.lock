@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../../package/cash-machine",
-                "reference": "d722497783964a8bdcd75b1ccd800da2bf3d603c",
+                "reference": "cf67f2c24a509a208bf981ab18bc56cad49d2fa4",
                 "shasum": null
             },
             "require": {
@@ -29,7 +29,7 @@
             },
             "autoload-dev": {
                 "psr-4": {
-                    "BreiteSeiteTest\\CashMachine\\": "tests/src"
+                    "BreiteSeite\\CashMachineTest\\": "tests/src"
                 }
             },
             "license": [
