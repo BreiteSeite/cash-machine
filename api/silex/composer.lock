@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../../package/cash-machine",
-                "reference": "cf67f2c24a509a208bf981ab18bc56cad49d2fa4",
+                "reference": "fbd743d0736ff26945bdc151ec9268cd52c621dd",
                 "shasum": null
             },
             "require": {
@@ -31,6 +31,11 @@
                 "psr-4": {
                     "BreiteSeite\\CashMachineTest\\": "tests/src"
                 }
+            },
+            "scripts": {
+                "tests": [
+                    "vendor/bin/phpunit"
+                ]
             },
             "license": [
                 "MIT"

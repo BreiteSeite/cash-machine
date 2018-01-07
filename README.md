@@ -11,4 +11,5 @@ See [CASH_MACHINE.md](CASH_MACHINE.md)
 
 ## Tests
 
-* run the PHPUnit tests via `php package/cash-machine/vendor/bin/phpunit package/cash-machine/tests/`
+* clone the repository
+* run `cd package/cash-machine && composer install && composer tests`
