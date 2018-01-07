@@ -5,7 +5,6 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $silexApp = new \Silex\Application(['debug' => true]);
 
-
 $silexApp->get('/withdraw/{amount}', function (string $amount) use ($silexApp) {
     $amount = filter_var($amount, FILTER_VALIDATE_FLOAT);
 
