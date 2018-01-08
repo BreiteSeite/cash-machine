@@ -59,9 +59,9 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
     }
 
     /**
-     * @return array|float[]
+     * @return float[]
      */
-    private function getBanknoteValuesDescending()
+    private function getBanknoteValuesDescending(): array
     {
         $bankNoteValues = $this->currency->getAvailableBankNoteValues();
         if (false === rsort($bankNoteValues)) {
