@@ -43,17 +43,7 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
             throw new InvalidArgumentException('Can not withdraw negative amounts');
         }
 
-        $pendingWithdrawal = $amount;
-        $bankNotes = [];
-        foreach ($bankNoteValuesDescending as $bankNoteValue) {
-            while ($pendingWithdrawal >= $bankNoteValue) {
-                $bankNotes[] = $bankNoteValue;
-
-                $pendingWithdrawal -= $bankNoteValue;
-            }
-        }
-
-        return $bankNotes;
+        return $this->getBanknotes($amount, $bankNoteValuesDescending);
     }
 
     /**
@@ -78,5 +68,25 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
             throw new \RuntimeException('Could not sort banknote values');
         }
         return $bankNoteValues;
+    }
+
+    /**
+     * @param float $amount
+     * @param float[] $bankNoteValuesDescending
+     * @return float[]
+     */
+    private function getBanknotes(float $amount, array $bankNoteValuesDescending): array
+    {
+        $pendingWithdrawal = $amount;
+        $bankNotes = [];
+        foreach ($bankNoteValuesDescending as $bankNoteValue) {
+            while ($pendingWithdrawal >= $bankNoteValue) {
+                $bankNotes[] = $bankNoteValue;
+
+                $pendingWithdrawal -= $bankNoteValue;
+            }
+        }
+
+        return $bankNotes;
     }
 }
