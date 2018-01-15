@@ -26,7 +26,7 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
     /**
      * @inheritdoc
      */
-    public function withdraw(float $amount = null): ?array
+    public function withdraw(float $amount = null): array
     {
         if ($amount === null) {
             return [];

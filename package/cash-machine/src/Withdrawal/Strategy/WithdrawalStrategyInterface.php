@@ -10,9 +10,9 @@ interface WithdrawalStrategyInterface
 {
     /**
      * @param float|null $amount
-     * @return float[]|null
+     * @return float[]
      * @throws NoteUnavailableException if you try to withdraw an amount that can not be represented by banknotes
      * @throws InvalidArgumentException if you try to withdraw a negative amount
      */
-    public function withdraw(float $amount): ?array;
+    public function withdraw(float $amount): array;
 }
