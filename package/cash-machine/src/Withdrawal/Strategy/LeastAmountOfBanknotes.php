@@ -32,6 +32,10 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
             return [];
         }
 
+        if ($amount < 0) {
+            throw new InvalidArgumentException('Can not withdraw negative amounts');
+        }
+
         $bankNoteValuesDescending = $this->getBanknoteValuesDescending();
         $lowestBankNoteValue = $this->getLowestBanknoteValue($bankNoteValuesDescending);
 
@@ -39,9 +43,6 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
             throw new NoteUnavailableException('Can not withdraw with current set of banknotes');
         }
 
-        if ($amount < 0) {
-            throw new InvalidArgumentException('Can not withdraw negative amounts');
-        }
 
         return $this->getBanknotes($amount, $bankNoteValuesDescending);
     }
