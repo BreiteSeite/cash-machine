@@ -24,7 +24,7 @@ class LeastAmountOfBanknotesTest extends TestCase
     }
 
     /**
-     * @param float $amount
+     * @param float|null $amount
      * @param array $expectedBankNotes
      * @dataProvider provideValidAmounts
      */
@@ -49,14 +49,6 @@ class LeastAmountOfBanknotesTest extends TestCase
         $this->expectException(InvalidArgumentException::class);
 
         $this->leastAmountOfBanknotes->withdraw((float) -130.00);
-    }
-
-    public function testWithdrawalWithNullAmountReturnsNull()
-    {
-        $this->assertSame(
-            null,
-            $this->leastAmountOfBanknotes->withdraw(null)
-        );
     }
 
     /**
