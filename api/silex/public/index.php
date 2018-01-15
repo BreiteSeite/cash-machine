@@ -7,6 +7,7 @@ $silexApp = new \Silex\Application(['debug' => true]);
 
 $silexApp->get('/withdraw/{providedAmount}', function (string $providedAmount) use ($silexApp) {
     $amountIsNull = ($providedAmount === 'null');
+
     if ($amountIsNull) {
         $amount = null;
     } else {
