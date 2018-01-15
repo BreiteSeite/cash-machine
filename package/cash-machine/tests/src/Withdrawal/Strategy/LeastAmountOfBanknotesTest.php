@@ -44,11 +44,26 @@ class LeastAmountOfBanknotesTest extends TestCase
         ];
     }
 
+
     public function testWithdrawalOfNegativeAmountsThrowsException()
     {
         $this->expectException(InvalidArgumentException::class);
 
         $this->leastAmountOfBanknotes->withdraw((float) -130.00);
+    }
+
+    public function testWithdrawalOfNaNThrowsException()
+    {
+        $this->expectException(InvalidArgumentException::class);
+
+        $this->leastAmountOfBanknotes->withdraw(NAN);
+    }
+
+    public function testWithdrawalOfInfinityThrowsException()
+    {
+        $this->expectException(InvalidArgumentException::class);
+
+        $this->leastAmountOfBanknotes->withdraw(INF);
     }
 
     /**

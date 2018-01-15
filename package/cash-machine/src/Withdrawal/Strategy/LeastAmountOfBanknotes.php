@@ -36,6 +36,14 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
             throw new InvalidArgumentException('Can not withdraw negative amounts');
         }
 
+        if (is_nan($amount) === true) {
+            throw new InvalidArgumentException('Can not withdraw NaN');
+        }
+
+        if (is_infinite($amount) === true) {
+            throw new InvalidArgumentException('Can not withdraw infinity');
+        }
+
         $bankNoteValuesDescending = $this->getBanknoteValuesDescending();
         $lowestBankNoteValue = $this->getLowestBanknoteValue($bankNoteValuesDescending);
 
