@@ -51,7 +51,7 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
      * @param float[] $bankNoteValues
      * @return float
      */
-    private function getLowestBanknoteValue(array $bankNoteValues)
+    private function getLowestBanknoteValue(array $bankNoteValues): float
     {
         $lowestBanknoteValue = end($bankNoteValues);
         reset($bankNoteValues);
