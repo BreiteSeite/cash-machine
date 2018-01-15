@@ -28,7 +28,7 @@ class LeastAmountOfBanknotesTest extends TestCase
      * @param array $expectedBankNotes
      * @dataProvider provideValidAmounts
      */
-    public function testWithdrawalOfValidAmounts(float $amount, array $expectedBankNotes)
+    public function testWithdrawalOfValidAmounts(float $amount = null, array $expectedBankNotes)
     {
         $bankNotes = $this->leastAmountOfBanknotes->withdraw($amount);
 
@@ -40,6 +40,7 @@ class LeastAmountOfBanknotesTest extends TestCase
         return [
             [30.00, [20.00, 10.00]],
             [80.00, [50.00, 20.00, 10.00]],
+            [null, []]
         ];
     }
 

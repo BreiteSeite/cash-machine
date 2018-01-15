@@ -29,7 +29,7 @@ final class LeastAmountOfBanknotes implements WithdrawalStrategyInterface
     public function withdraw(float $amount = null): ?array
     {
         if ($amount === null) {
-            return null;
+            return [];
         }
 
         $bankNoteValuesDescending = $this->getBanknoteValuesDescending();
