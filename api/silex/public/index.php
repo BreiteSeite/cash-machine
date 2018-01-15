@@ -5,12 +5,20 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $silexApp = new \Silex\Application(['debug' => true]);
 
-$silexApp->get('/withdraw/{amount}', function (string $amount) use ($silexApp) {
-    $amount = filter_var($amount, FILTER_VALIDATE_FLOAT);
+$silexApp->get('/withdraw/{providedAmount}', function (string $providedAmount) use ($silexApp) {
+    $amountIsNull = ($providedAmount === 'null');
+    if ($amountIsNull) {
+        $amount = null;
+    } else {
+        $amountInFloat = filter_var($providedAmount, FILTER_VALIDATE_FLOAT);
 
-    if ($amount === false) {
-        throw new \RuntimeException('Withdrawal amount is not a float value');
+        if ($amountInFloat === false) {
+            throw new \RuntimeException('Withdrawal amount is not a float value');
+        }
+
+        $amount = $amountInFloat;
     }
+
 
     $withdrawal = new \BreiteSeite\CashMachine\Withdrawal\Strategy\LeastAmountOfBanknotes(
         new \BreiteSeite\CashMachine\Currency\BrazilianReal()
